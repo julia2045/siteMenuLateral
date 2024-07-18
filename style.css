@@ -1,0 +1,169 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Previne a barra de rolagem horizontal */
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    gap: 20px;
+    background: rgb(245, 228, 245);
+}
+
+img {
+    max-width: 100%;
+}
+
+.clickMenu {
+    position: relative;
+}
+
+.buttonMenu {
+    border: none;
+    background-color: #ffffffeb;
+    width: 70px;
+    height: 70px;
+    margin: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonMenu:hover {
+    background: rgb(245, 228, 245);
+}
+
+.menu {
+    position: absolute;
+    right: -200px; 
+    width: 200px; 
+    height: 100%;
+    align-items: center;
+    background-color: black;
+    transition: 0.3s ease; 
+    background: rgb(245, 228, 245);
+    transition: all 1s;
+}
+
+.menu.active {
+    transform: translateX(-200px); /* Traz o menu para a tela */
+    display: block;
+}
+
+
+
+.menu:hover{
+    margin-right: 15px;
+    transition: 1s;
+    
+}
+
+.menu a{
+    font-family: "poppins" , sans-serif;
+    color:#7F6D7E;
+    text-decoration: none;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    color: black;
+    font-weight: 700px;
+}
+
+.menu li{
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px ;
+    list-style: none;
+    transition: all 1s;
+}
+
+.menu li:hover{
+    background-color: #fff;
+    transition: all 1s;
+}
+
+.menuClose{
+    background: rgb(245, 228, 245);
+    border: 1px solid #db95d2;
+    border-radius: 5px;
+    color: #db95d2;
+    margin: 5px;
+}
+
+.popUp{
+   background: rgba(0,0,0, 0.5); /* intensidade de opacidade*/
+   position: fixed;
+   height: 100vh;/*altura de 100% da pagina*/
+   width: 100vw;
+   left: 0px;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: none;
+
+}
+.popUp.active{
+    display: flex;
+}
+.popUpContent{
+    background: rgb(245, 228, 245);
+    padding: 20px;
+    position: relative;
+    border-radius: 20px;
+   
+}
+
+.popUpClose{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgb(245, 228, 245);
+    border: 1px solid #db95d2;
+    border-radius: 5px;
+    color: #db95d2;
+    margin: 5px;
+
+}
+
+.popUpOpen{
+    background: rgb(245, 228, 245);
+    border: 1px solid #db95d2;
+    margin: 10px 40px ;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.popUpOpen:hover{
+    border: 2px solid #db95d2;
+}
+
+@media(max-width: 600px){
+    .buttonMenu {
+        border: none;
+        background-color: #ffffffeb;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .name{
+        padding: 0px 60px 10px 60px;
+        
+    }
+
+    .popUpContent{
+        width: 300px;
+    }
+}

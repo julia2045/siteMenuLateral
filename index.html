@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/popUp.css">
+    <title>Menu Lateral</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="clickMenu">
+                <nav>
+                    <button class="buttonMenu menuToggle" id="MenuManin">
+                        <img src="/img/logo botão sem fundo.png" alt="">
+                    </button>
+                    <div class="name"><img  src="/img/julia Martins.png" alt=""></div>
+                </nav>
+            </div>
+            <div class="menu" data-id="MenuManin">
+                <nav>
+                    <button class="menuClose menuToggle">X</button>
+                    <ul>
+                        <li><a href="#courses">✎ Formação</a></li>
+                        <li><a href="#courses">☸︎ Experiência</a></li>
+                        <li><a href="#courses">✆ Contato</a></li>
+                        <li></li>
+                    </ul>
+                    <button class="popUpOpen popUpToggle">Receba o Curriculo</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="popUp">
+        <div class="popUpContent" id="modal">
+            <button class="popUpClose popUpToggle">X</button>
+            <div class="layoutPopUp ">
+                <div>
+                  <img src="/img/Black White Minimalist Logo (1).png">
+                </div>
+                <div>
+                  <h1>Receba meu Curriculo no Seu Whatsapp</h1>
+                  <form class="form" action="./">
+                    <div>
+                      <label for="name">Nome<span class="detailRed">*</span></label>
+                      <input type="text" id="name" name="nome" placeholder="Seu Nome" >
+                    </div>
+                    <div>
+                      <label for="name">Sobrenome<span class="detailRed">*</span></label>
+                      <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Seu Sobrenome">
+                    </div>
+                    <div>
+                      <label for="telefone"> Número de Whatsapp <span class="detailRed">*</span></label>
+                      <input type="text" id="telefone" name="telefone" placeholder="(XX)00000-0000">
+                    </div>
+                  </form>
+                  <button class="buttonPopUp">Enviar</button>
+                </div>
+             </div>
+        </div>
+    </div>
+
+   
+    <script src="/script.js"></script>
+</body>
+</html>

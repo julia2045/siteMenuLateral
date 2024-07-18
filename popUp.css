@@ -1,0 +1,52 @@
+h1{
+    font-family: "Rubik", sans-serif;
+    color:rgb(136, 85, 136);
+}
+
+img{
+    border-radius: 5px;
+}
+.listMenu li button{
+    text-decoration: none;
+    color: #ECC69E;
+    font-size: 15px;
+    padding: 20px;
+}
+.listMenu li {
+    list-style: none;
+}
+
+
+.form label{
+    font-family: "Rubik", sans-serif;
+    color:rgb(149, 102, 149);
+    margin-bottom: 10px;
+}
+.form input, select {
+    border: #B89767;
+    background-color:rgb(239, 190, 239);
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.buttonPopUp{
+    background-color: rgb(239, 190, 239);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+}
+.layoutPopUp{
+    display: flex;
+    position: relative;
+    
+   
+    
+}
+.closePopUp{
+    position: absolute;
+    right: 5px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
